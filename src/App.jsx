@@ -1,13 +1,19 @@
 import React from "react";
-import UserList from "./features/users/userList/UserList.component";
+import { Route, Routes } from "react-router-dom";
+import ShopList from "./features/shopList/ShopList.component";
+import AddShop from "./features/addShop/AddShop.component";
 
 import "./App.css";
+import EditShop from "./features/editShop/EditShop.component";
 
 const App = () => {
   return (
     <div className="main_container">
-      <h1 className="main_heading">Shop List</h1>
-      <UserList />
+      <Routes>
+        <Route path="/" element={<ShopList />} />
+        <Route path="/addShop" element={<AddShop />} />
+        <Route path="/editShop/:id" element={<EditShop />} />
+      </Routes>
     </div>
   );
 };

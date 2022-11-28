@@ -1,0 +1,49 @@
+.addShop_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 1rem;
+}
+
+.addShop_heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.addShop_input {
+  width: 30rem;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #f3f3f3;
+  border: 0.2rem solid #000;
+  border-radius: 0.5rem;
+
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.addShop_submitButton {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: 0.2rem solid #000;
+  border-radius: 0.3rem;
+  color: #fff;
+  background-color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.addShop_submitButton:hover {
+  color: #000;
+  background-color: #fff;
+}
