@@ -6,7 +6,7 @@ import { deleteShop } from "../../features/shopSlice";
 import "./ShopCard.styles.css";
 
 const ShopCard = () => {
-  const shops = useSelector((store) => store.shops);
+  const { shopArray, filterArray } = useSelector((state) => state.shops);
   const dispatch = useDispatch();
   const handleRemoveShop = (id) => {
     dispatch(
@@ -19,7 +19,7 @@ const ShopCard = () => {
     <>
       <div className="main">
         <ul className="cards">
-          {shops.map((shop) => (
+          {filterArray.map((shop) => (
             <li className="cards_item" key={shop.id}>
               <div className="card">
                 <div className="card_content">
